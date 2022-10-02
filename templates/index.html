@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>TopicInfo</title>
+  <meta charset="UTF-8" />
+  </head>
+  <body>
+      <h1>Retrieve information on a chosen topic</h1>
+      <form action="{{ url_for('index') }}" method="POST">
+        <br>
+        <label>Enter topic:</label>
+        <input type="text" name="topic">
+        </br><br>
+        <input type="submit" name="next" value="Submit">
+     </form>
+     <br><br>
+       <h2>Results</h2>
+       <p>Number of occurrences of the topic: {{nr_of_topic}}
+       <br>
+   </div>
+ </body>
+</html>
